@@ -1,2 +1,2 @@
 # HTML
-HTML files along with some CSS and JavaScript
+HTML files for gallery, form, and a video player along with some CSS and JavaScript
