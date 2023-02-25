@@ -1,0 +1,183 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link rel="stylesheet" href="html-gallery-style.css">
+
+<div class="main">
+    <h1>KUVIA</h1>
+<h2 style="text-align:center">Galleria</h2>
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+    <button class="btn" onclick="filterSelection('winter')"> Winter</button>
+    <button class="btn" onclick="filterSelection('summer')"> Summer</button>
+  </div>
+
+ <div class="row">
+    <div class="column nature winter">
+      <div class="content">
+        <img src="https://edgeski.fi/wp-content/uploads/2017/01/edge_pyha%CC%881.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <h3>Kuva lumihuipuista</h3>
+      </div>
+    </div>
+    <div class="column nature winter">
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Pyhatunturi.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <h3>Laskettelijoita</h3>
+      </div>
+    </div>
+    <div class="column nature summer">
+      <div class="content">
+        <img src="https://retkipaikka.fi/wp-content/uploads/2017/07/pyhaluostonaava-1-17.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <h3>Luostonaava kesällä</h3>
+      </div>
+    </div>
+    <div class="column nature summer">
+      <div class="content">
+        <img src="http://www.lumipallo.fi/alankoulkoilee/files/2017/07/DSC00449-1024x576.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <h3>Kesäkuva</h3>
+      </div>
+    </div>
+    <div class="column nature winter">
+      <div class="content">
+        <img src="https://s3-eu-west-1.amazonaws.com/luosto-production-uploads/general/pyha_rinteet-Polar-rinteet_ja_pistepalanderrinteet.jpg?mtime=20151019161833&focal=none" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <h3>Karttakuva Polar-rinteistä</h3>
+      </div>
+    </div>
+ </div>
+ <div class="row">
+    <div class="column animals summer">
+        <div class="content">
+            <img src="https://www.vihrealanka.fi/sites/default/files/styles/leve__kuva__500_/public/images/imagefield/1512karhunpentu.jpg?itok=KJR1UKds" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <h3>Karhunpentu puussa</h3>
+        </div>
+    </div>
+    <div class="column animals summer">
+        <div class="content">
+            <img src="https://images.interactives.dk/shutterstock_152076950-xmzpfu7si_3r5kc_ha6caw-zwo7e0mpmbrrf6dww4rn-q-3452buVWWUKeIzng-3-DOQ.jpg?auto=compress&ch=Width,DPR&dpr=2.63&h=480&ixjsv=2.2.4&q=38&rect=0,0,0,0" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <h3>Orava kannossa</h3>
+        </div>
+    </div>
+    <div class="column animals summer">
+        <div class="content">
+            <img src="https://fi-seiska-cdn-pro.seiska.fi/files/styles/medium_teaser/s3/2019-10/AdobeStock_80721426_v0.0.jpg?h=47db177d&amp;itok=uEOXqfDm" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <h3>Siili</h3>
+        </div>
+    </div>
+    <div class="column animals summer">
+        <div class="content">
+            <img src="https://seura.fi/wp-content/uploads/2015/11/hirvisonni_123rf1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <h3>Hirvi metsässä</h3>
+        </div>
+    </div>
+    <div class="column animals winter">
+        <div class="content">
+            <img src="https://images.cdn.yle.fi/image/upload/w_1200,h_800,ar_1.5,dpr_1,c_fill/q_auto:eco,f_auto,fl_lossy/39-6334375e26d5bf2c95e" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <h3>Susi talvella</h3>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="https://edgeski.fi/wp-content/uploads/2017/01/edge_pyha%CC%881.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Pyhatunturi.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="https://retkipaikka.fi/wp-content/uploads/2017/07/pyhaluostonaava-1-17.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="http://www.lumipallo.fi/alankoulkoilee/files/2017/07/DSC00449-1024x576.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 10</div>
+        <img src="https://s3-eu-west-1.amazonaws.com/luosto-production-uploads/general/pyha_rinteet-Polar-rinteet_ja_pistepalanderrinteet.jpg?mtime=20151019161833&focal=none" style="width:100%">
+      </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 10</div>
+        <img src="https://www.vihrealanka.fi/sites/default/files/styles/leve__kuva__500_/public/images/imagefield/1512karhunpentu.jpg?itok=KJR1UKds" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">7 / 10</div>
+        <img src="https://images.interactives.dk/shutterstock_152076950-xmzpfu7si_3r5kc_ha6caw-zwo7e0mpmbrrf6dww4rn-q-3452buVWWUKeIzng-3-DOQ.jpg?auto=compress&ch=Width,DPR&dpr=2.63&h=480&ixjsv=2.2.4&q=38&rect=0,0,0,0" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">8 / 10</div>
+        <img src="https://fi-seiska-cdn-pro.seiska.fi/files/styles/medium_teaser/s3/2019-10/AdobeStock_80721426_v0.0.jpg?h=47db177d&amp;itok=uEOXqfDm" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">9 / 10</div>
+        <img src="https://seura.fi/wp-content/uploads/2015/11/hirvisonni_123rf1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 10</div>
+        <img src="https://images.cdn.yle.fi/image/upload/w_1200,h_800,ar_1.5,dpr_1,c_fill/q_auto:eco,f_auto,fl_lossy/39-6334375e26d5bf2c95e" style="width:100%">
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="https://edgeski.fi/wp-content/uploads/2017/01/edge_pyha%CC%881.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kuva lumihuipuista">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Pyhatunturi.JPG" style="width:100%" onclick="currentSlide(2)" alt="Laskettelijoita">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://retkipaikka.fi/wp-content/uploads/2017/07/pyhaluostonaava-1-17.jpg" style="width:100%" onclick="currentSlide(3)" alt="Luostonaava kesällä">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://www.lumipallo.fi/alankoulkoilee/files/2017/07/DSC00449-1024x576.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kesäkuva">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://s3-eu-west-1.amazonaws.com/luosto-production-uploads/general/pyha_rinteet-Polar-rinteet_ja_pistepalanderrinteet.jpg?mtime=20151019161833&focal=none" style="width:100%" onclick="currentSlide(5)" alt="Karttakuva Polar-rinteistä">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://www.vihrealanka.fi/sites/default/files/styles/leve__kuva__500_/public/images/imagefield/1512karhunpentu.jpg?itok=KJR1UKds" style="width:100%" onclick="currentSlide(6)" alt="Karhunpentu puussa">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://images.interactives.dk/shutterstock_152076950-xmzpfu7si_3r5kc_ha6caw-zwo7e0mpmbrrf6dww4rn-q-3452buVWWUKeIzng-3-DOQ.jpg?auto=compress&ch=Width,DPR&dpr=2.63&h=480&ixjsv=2.2.4&q=38&rect=0,0,0,0" style="width:100%" onclick="currentSlide(7)" alt="Orava kannossa">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://fi-seiska-cdn-pro.seiska.fi/files/styles/medium_teaser/s3/2019-10/AdobeStock_80721426_v0.0.jpg?h=47db177d&amp;itok=uEOXqfDm" style="width:100%" onclick="currentSlide(8)" alt="Siili">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://seura.fi/wp-content/uploads/2015/11/hirvisonni_123rf1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Hirvi metsässä">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="https://images.cdn.yle.fi/image/upload/w_1200,h_800,ar_1.5,dpr_1,c_fill/q_auto:eco,f_auto,fl_lossy/39-6334375e26d5bf2c95e" style="width:100%" onclick="currentSlide(10)" alt="Susi talvella">
+    </div>
+  </div>
+</div>
+
+<script src="slideshow.js"></script>
+<script src="filters.js"></script>
+    
+</body>
+</html>
